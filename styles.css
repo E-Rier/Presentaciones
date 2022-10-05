@@ -1,0 +1,127 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	/*padding:0;*/
+	/*background-color: blueviolet;*/
+	background-image: url("imagenes/fondo-body-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.presentacion{
+	font-size: 60px;
+	transform: translate(0px, 0px);
+}
+.cabecera {
+	display: flex;
+	flex: 25%;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-image: url("imagenes/fondo-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header {
+	font-family: sans-serif;
+	text-align: center;
+	color: cornflowerblue;
+	text-shadow: 5px 5px 10px gray;
+	width: 100%;
+}
+.flex-container {
+	flex: 25%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.master{
+	display: flex;
+	justify-content: center;
+}
+p{
+	margin: 0px;
+	
+}
+.titulo-targeta{
+	text-align: center;
+}
+.retoqueFoto img {
+	border-radius: 30px;
+}
+.etiqueta {
+	font-style: italic;
+	font-family: serif;
+	width: 300px;
+	height: 150px;
+	margin: 20px;
+	padding: 5px;
+	background-color: cornflowerblue;
+	justify-content: left;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px gray;	
+}
+.etiqueta:hover{
+	/*box-shadow: 10px 10px gray;*/
+	transform: translate(0px, -10px);
+	
+}
+.retoqueFoto:hover{
+	transform: scale(2, 2);
+}
+.materia{
+	padding
+	: 5px;
+	padding-top: 0px;
+}
+.sub-titulo {
+	font-family: sans-serif;
+	color: cornflowerblue;
+	text-align: center;
+	text-shadow: 5px 5px 10px gray;
+}
+.foto {
+	display: flex;
+}
+.pie-de-pagina{
+	background-image: url("imagenes/fondo-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+a{
+	text-decoration: none;
+	color: cornflowerblue;
+	font-family: sans-serif;
+}
+a:hover{
+	color: aqua;
+}
+.pie-de-pagina{
+	color: cornflowerblue;
+	font-family: sans-serif;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.enlace{
+	background-color: black;
+	border-width: 1px;
+	/*border-style: solid;
+	border-color: gray;*/
+	border-radius: 10px;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 5px;
+	color: gray;
+}
+@media screen and (max-width: 800px){
+	.column {
+		flex: 50%;
+	}
+}
+@media screen and (max-width: 400px){
+	.column{
+		flex: 100%;
+	}
+}
